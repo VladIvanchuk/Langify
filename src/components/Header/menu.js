@@ -1,7 +1,7 @@
 export const menu = [
   {
     title: "Головна",
-    link: "/main",
+    link: "/langify",
   },
   {
     title: "Курси",
