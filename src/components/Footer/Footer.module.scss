@@ -1,0 +1,39 @@
+@import "../../App.scss";
+
+.wrapper {
+  margin: 10vw 0 0 0;
+  padding: $pad;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  background-color: #b5b5b5;
+  height: 9vw;
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: 15vw;
+    }
+    a {
+      text-decoration: none;
+      color: $textColor;
+      padding: 0.8vw 2vw;
+      border-radius: 18px;
+      background-color: $mainColor;
+      border: 0;
+      font-style: 1.5vw;
+      font-weight: 700;
+    }
+  }
+  .block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .contacts {
+      display: flex;
+    }
+    p {
+      margin: 1vw;
+    }
+  }
+}

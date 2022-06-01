@@ -1,0 +1,26 @@
+@import "../App.scss";
+.wrapper {
+  padding: 10vw 10vw;
+  h1 {
+    text-align: center;
+  }
+  .contacts {
+    padding: 5vw 10vw;
+    display: flex;
+    justify-content: space-around;
+    img {
+      width: 5vw;
+    }
+  }
+  iframe {
+    width: 100%;
+  }
+  .breadCrumbs {
+    margin: 5vw;
+    color: #333;
+    font-size: 1vw;
+    a {
+      color: rgb(255, 213, 0);
+    }
+  }
+}

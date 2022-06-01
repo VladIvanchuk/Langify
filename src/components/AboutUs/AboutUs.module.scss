@@ -1,0 +1,12 @@
+@import "../../App.scss";
+
+.wrapper {
+  padding: $pagePadding;
+  h1 {
+    text-align: center;
+    font-size: 2.5vw;
+  }
+  p {
+    text-indent: 30px;
+  }
+}

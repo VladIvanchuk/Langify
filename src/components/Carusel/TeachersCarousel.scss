@@ -1,0 +1,9 @@
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+
+.alice-carousel__stage-item {
+  img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+  }
+}

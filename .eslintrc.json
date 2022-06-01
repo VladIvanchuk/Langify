@@ -1,0 +1,22 @@
+{
+  "env": {
+    "browser": true, // Разрешить запуск кода в браузере
+    "commonjs": true, // Разрешить commonJS
+    "es6": true, // Включает синтаксис ES6 автоматически
+    "node": true // Разрешить запуск кода в node
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"], // Включить React плагин
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true // Разрешить формат JSX
+    },
+    "ecmaVersion": 2018, // Указываем версию ECMAScript
+    "sourceType": "module" // Включить модульную поддержку кода ECMAScript
+  },
+  "plugins": [
+    // Включить поддержку плагинов
+    "react",
+    "babel"
+  ],
+  "rules": {}
+}
