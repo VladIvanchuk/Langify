@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.c2ca6c94.css",
-    "main.js": "/static/js/main.536da769.js",
-    "static/js/787.d0fb83b5.chunk.js": "/static/js/787.d0fb83b5.chunk.js",
-    "static/media/bgVideo.mp4": "/static/media/bgVideo.1191f0d9423eba61e8e3.mp4",
-    "static/media/video.png": "/static/media/video.4231a92a30ec7720015f.png",
-    "static/media/teachers.jpg": "/static/media/teachers.127fcef50327b5b3a66a.jpg",
-    "static/media/photo1.jpg": "/static/media/photo1.40e4e5a9c43c2c031f81.jpg",
-    "static/media/frenchjpg.jpg": "/static/media/frenchjpg.916621a8693a83cd03a2.jpg",
-    "static/media/news.jpg": "/static/media/news.d6a6ec00d5f3d5107e7e.jpg",
-    "static/media/polish.jpg": "/static/media/polish.70a20b94ecd540c2c640.jpg",
-    "static/media/english.jpg": "/static/media/english.8086f36a8509ccc04190.jpg",
-    "static/media/Carusel1.jpg": "/static/media/Carusel1.932284745eb2ef3dc989.jpg",
-    "static/media/Carusel3.jpg": "/static/media/Carusel3.e016d48be53b89762832.jpg",
-    "static/media/Carusel4.jpg": "/static/media/Carusel4.243daebf91d019c38256.jpg",
-    "static/media/Carusel2.jpg": "/static/media/Carusel2.fed760493e8bf793a880.jpg",
-    "static/media/learn.jpg": "/static/media/learn.0df6ca143e8a6f0d1713.jpg",
-    "static/media/german.jpg": "/static/media/german.be95c55c9e8ecfe831e1.jpg",
-    "static/media/logo.svg": "/static/media/logo.5c2da06bc3e9a14cc621ca141c0512c5.svg",
-    "index.html": "/index.html",
-    "main.c2ca6c94.css.map": "/static/css/main.c2ca6c94.css.map",
-    "main.536da769.js.map": "/static/js/main.536da769.js.map",
-    "787.d0fb83b5.chunk.js.map": "/static/js/787.d0fb83b5.chunk.js.map"
+    "main.css": "/langify/static/css/main.c2ca6c94.css",
+    "main.js": "/langify/static/js/main.80457a7d.js",
+    "static/js/787.d0fb83b5.chunk.js": "/langify/static/js/787.d0fb83b5.chunk.js",
+    "static/media/bgVideo.mp4": "/langify/static/media/bgVideo.1191f0d9423eba61e8e3.mp4",
+    "static/media/video.png": "/langify/static/media/video.4231a92a30ec7720015f.png",
+    "static/media/teachers.jpg": "/langify/static/media/teachers.127fcef50327b5b3a66a.jpg",
+    "static/media/photo1.jpg": "/langify/static/media/photo1.40e4e5a9c43c2c031f81.jpg",
+    "static/media/frenchjpg.jpg": "/langify/static/media/frenchjpg.916621a8693a83cd03a2.jpg",
+    "static/media/news.jpg": "/langify/static/media/news.d6a6ec00d5f3d5107e7e.jpg",
+    "static/media/polish.jpg": "/langify/static/media/polish.70a20b94ecd540c2c640.jpg",
+    "static/media/english.jpg": "/langify/static/media/english.8086f36a8509ccc04190.jpg",
+    "static/media/Carusel1.jpg": "/langify/static/media/Carusel1.932284745eb2ef3dc989.jpg",
+    "static/media/Carusel3.jpg": "/langify/static/media/Carusel3.e016d48be53b89762832.jpg",
+    "static/media/Carusel4.jpg": "/langify/static/media/Carusel4.243daebf91d019c38256.jpg",
+    "static/media/Carusel2.jpg": "/langify/static/media/Carusel2.fed760493e8bf793a880.jpg",
+    "static/media/learn.jpg": "/langify/static/media/learn.0df6ca143e8a6f0d1713.jpg",
+    "static/media/german.jpg": "/langify/static/media/german.be95c55c9e8ecfe831e1.jpg",
+    "static/media/logo.svg": "/langify/static/media/logo.5c2da06bc3e9a14cc621ca141c0512c5.svg",
+    "index.html": "/langify/index.html",
+    "main.c2ca6c94.css.map": "/langify/static/css/main.c2ca6c94.css.map",
+    "main.80457a7d.js.map": "/langify/static/js/main.80457a7d.js.map",
+    "787.d0fb83b5.chunk.js.map": "/langify/static/js/787.d0fb83b5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c2ca6c94.css",
-    "static/js/main.536da769.js"
+    "static/js/main.80457a7d.js"
   ]
 }
