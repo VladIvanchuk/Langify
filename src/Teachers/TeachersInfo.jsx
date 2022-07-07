@@ -11,7 +11,17 @@ export const CoursesInfo = () => {
       setLoading(true);
       const response = await fetch("https://jsonplaceholder.typicode.com/users");
       const data = await response.json();
-      setUsers(data);
+      const data2 = JSON.stringify([...data, ...data]);
+      const obj = JSON.parse(data2);
+      console.log("data2: ", data2);
+      const data3 = obj.map((user, idx) => {
+        console.log(idx);
+        user.id = idx;
+        return user;
+      });
+      console.log("data3: ", data3);
+
+      setUsers(data3);
       setLoading(false);
     };
     fetchData();
