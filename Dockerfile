@@ -1,33 +1,24 @@
-# Use an official node image as the base image
-FROM node:14
+# Build stage
+FROM node:14 AS build
 
-# Set the working directory inside the container
 WORKDIR /app
 
-# Copy the package.json and package-lock.json
 COPY package*.json ./
 
-# Install dependencies
 RUN npm install
 
-# Copy the rest of the application code
 COPY . .
 
-# Build the React app
 RUN npm run build
 
-# Use Nginx to serve the build folder
+# Production stage
 FROM nginx:alpine
 
 # Copy built React app to Nginx directory
-COPY --from=0 /app/build /usr/share/nginx/html
+COPY --from=build /app/build /usr/share/nginx/html
 
-# Remove default Nginx config
-RUN rm /etc/nginx/conf.d/default.conf
-COPY nginx.conf /etc/nginx/conf.d
+# Copy the Nginx configuration template
+COPY nginx.conf.template /etc/nginx/templates/default.conf.template
 
-# Expose port 80
-EXPOSE 80
-
-# Start Nginx
+# Use the default command to run Nginx, which will process templates
 CMD ["nginx", "-g", "daemon off;"]
