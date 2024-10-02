@@ -6,39 +6,39 @@ on:
       - main
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the repository
+      # Клонування репозиторію
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      # Set up Node.js
-      - name: Use Node.js 16.x
+      # Налаштування Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
           node-version: "16"
 
-      # Install dependencies and run tests
+      # Встановлення залежностей та запуск тестів
       - name: Install dependencies
         run: npm install
 
       - name: Run tests
         run: npm run test
 
-      # Build Docker image
+      # Побудова Docker-образу
       - name: Build Docker image
-        run: docker build . -t registry.heroku.com/${{ secrets.HEROKU_APP_NAME }}/web:${{ github.sha }}
+        run: docker build . -t registry.heroku.com/${{ secrets.HEROKU_APP_NAME }}/web
 
-      # Log in to Heroku Container Registry
+      # Логін до Heroku Container Registry
       - name: Log in to Heroku Container Registry
-        run: echo ${{ secrets.HEROKU_API_KEY }} | docker login --username=_ --password-stdin registry.heroku.com
+        run: echo ${{ secrets.HEROKU_API_KEY }} | docker login --username=${{ secrets.HEROKU_EMAIL }} --password-stdin registry.heroku.com
 
-      # Push Docker image to Heroku
-      - name: Push Docker image
-        run: docker push registry.heroku.com/${{ secrets.HEROKU_APP_NAME }}/web:${{ github.sha }}
+      # Завантаження Docker-образу в Heroku
+      - name: Push Docker image to Heroku
+        run: docker push registry.heroku.com/${{ secrets.HEROKU_APP_NAME }}/web
 
-      # Release the container on Heroku
-      - name: Release the Heroku container
+      # Реліз Docker-контейнера на Heroku
+      - name: Release Docker container on Heroku
         run: heroku container:release web --app ${{ secrets.HEROKU_APP_NAME }}
