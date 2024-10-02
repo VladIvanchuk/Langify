@@ -1,8 +1,18 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import { BrowserRouter } from "react-router-dom";
+import Welcome from "./components/Welcome/Welcome";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+test("renders Welcome component with correct content", () => {
+  render(
+    <BrowserRouter>
+      <Welcome />
+    </BrowserRouter>
+  );
+
+  const titleElement = screen.getByText(/Langify/i);
+  expect(titleElement).toBeInTheDocument();
+
+  const linkElement = screen.getByText(/Записатися на курс/i);
   expect(linkElement).toBeInTheDocument();
 });
