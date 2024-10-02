@@ -8,10 +8,10 @@ test("renders Welcome component with correct content", () => {
     <BrowserRouter>
       <Welcome />
     </BrowserRouter>
-  );  
+  );
 
   const titleElement = screen.getByText(/Langify/i);
   expect(titleElement).toBeInTheDocument();
-  const linkElement = screen.getByText(/Записатися/i);
+  const linkElement = screen.getByText(/Записатися на курс/i);
   expect(linkElement).toBeInTheDocument();
 });
