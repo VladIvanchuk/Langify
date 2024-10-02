@@ -37,7 +37,7 @@ jobs:
 
       # Push Docker image to Heroku
       - name: Push Docker image
-        run: docker push registry.heroku.com/${{ secrets.HEROKU_APP_NAME }}/web
+        run: docker push registry.heroku.com/${{ secrets.HEROKU_APP_NAME }}/web:${{ github.sha }}
 
       # Release the container on Heroku
       - name: Release the Heroku container
