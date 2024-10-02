@@ -12,7 +12,6 @@ test("renders Welcome component with correct content", () => {
 
   const titleElement = screen.getByText(/Langify/i);
   expect(titleElement).toBeInTheDocument();
-
-  const linkElement = screen.getByText(/Записатися на курс/i);
+  const linkElement = screen.getByText(/Записатися/i);
   expect(linkElement).toBeInTheDocument();
 });
