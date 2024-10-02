@@ -41,5 +41,4 @@ jobs:
 
       # Release the container on Heroku
       - name: Release the Heroku container
-        run: |
-          heroku container:release web --app ${{ secrets.HEROKU_APP_NAME }}
+        run: heroku container:release web --app ${{ secrets.HEROKU_APP_NAME }}
