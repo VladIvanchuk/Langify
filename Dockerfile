@@ -25,10 +25,12 @@ COPY nginx.conf.template /etc/nginx/conf.d/default.conf.template
 
 # Copy the entrypoint script
 COPY entrypoint.sh /entrypoint.sh
+
+# Ensure the entrypoint script is executable
 RUN chmod +x /entrypoint.sh
 
 # Expose port (optional)
 EXPOSE 80
 
-# Set the entrypoint
-ENTRYPOINT ["/entrypoint.sh"]
+# Replace ENTRYPOINT with CMD
+CMD ["/entrypoint.sh"]
