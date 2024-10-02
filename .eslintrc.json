@@ -1,22 +1,19 @@
 {
   "env": {
-    "browser": true, // Разрешить запуск кода в браузере
-    "commonjs": true, // Разрешить commonJS
-    "es6": true, // Включает синтаксис ES6 автоматически
-    "node": true // Разрешить запуск кода в node
+    "browser": true,
+    "es2021": true,
+    "jest": true
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended"], // Включить React плагин
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
   "parserOptions": {
     "ecmaFeatures": {
-      "jsx": true // Разрешить формат JSX
+      "jsx": true
     },
-    "ecmaVersion": 2018, // Указываем версию ECMAScript
-    "sourceType": "module" // Включить модульную поддержку кода ECMAScript
+    "ecmaVersion": 12,
+    "sourceType": "module"
   },
-  "plugins": [
-    // Включить поддержку плагинов
-    "react",
-    "babel"
-  ],
-  "rules": {}
+  "plugins": ["react"],
+  "rules": {
+    "react/react-in-jsx-scope": "off"
+  }
 }

@@ -5,11 +5,9 @@
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
     "firebase": "^9.8.2",
     "gh-pages": "^4.0.0",
-    "node-sass": "^7.0.1",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-alice-carousel": "^2.6.1",
@@ -18,6 +16,7 @@
     "react-google-button": "^0.7.2",
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",
+    "sass": "^1.79.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -47,8 +46,11 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/react": "^16.0.1",
+    "@types/jest": "^29.5.13",
     "eslint": "^8.16.0",
     "eslint-plugin-babel": "^5.3.1",
-    "eslint-plugin-react": "^7.30.0"
+    "eslint-plugin-react": "^7.30.0",
+    "jest": "^27.5.1"
   }
 }

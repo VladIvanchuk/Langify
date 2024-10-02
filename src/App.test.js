@@ -8,7 +8,7 @@ test("renders Welcome component with correct content", () => {
     <BrowserRouter>
       <Welcome />
     </BrowserRouter>
-  );
+  );  
 
   const titleElement = screen.getByText(/Langify/i);
   expect(titleElement).toBeInTheDocument();
